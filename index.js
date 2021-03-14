@@ -3,7 +3,7 @@ const request = require("request-promise");
 const cheerio = require("cheerio");
 const path=require('path');
 require('dotenv').config();
-console.log(process.env,"my enviroment varaibles hain ye");
+// console.log(process.env,"my enviroment varaibles hain ye");
 const scrapperfile = require("./scrapper");
 
 const mongoose = require("mongoose");
