@@ -1,5 +1,5 @@
 <h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="TLDR_of_the_Internet_0"></a>TLDR of the Internet</h1>
-<h2 data-line-start=1 data-line-end=2 ><a id="Sumarizes_the_internet_in_a_shortest_way_possible_1"></a>Sumarizes the internet in a shortest way possible</h2>
+<h2 class="code-line" data-line-start=1 data-line-end=2 ><a id="Sumarizes_the_internet_in_a_shortest_way_possible_1"></a>Sumarizes the internet in a shortest way possible</h2>
 <p class="has-line-data" data-line-start="3" data-line-end="4"><a href="https://travis-ci.org/joemccann/dillinger"><img src="https://travis-ci.org/joemccann/dillinger.svg?branch=master" alt="Build Status"></a></p>
 <h2 class="code-line" data-line-start=5 data-line-end=6 ><a id="Features_5"></a>Features</h2>
 <ul>
@@ -10,7 +10,7 @@
 <li class="has-line-data" data-line-start="11" data-line-end="13">Responsive</li>
 </ul>
 <h2 class="code-line" data-line-start=13 data-line-end=14 ><a id="Architecture_13"></a>Architecture</h2>
-<p class="has-line-data" data-line-start="14" data-line-end="15"><img src="http://url/to/img.png" alt="alt text"></p>
+<p class="has-line-data" data-line-start="14" data-line-end="15"><img src="https://raw.githubusercontent.com/hksahil/TLDR-for-the-Internet/8b2584605345796418711b504d75f06874447b39/Frontend/front-end/src/images/1.jpg" alt="alt text"></p>
 <h2 class="code-line" data-line-start=16 data-line-end=17 ><a id="Tech_Used_16"></a>Tech Used</h2>
 <p class="has-line-data" data-line-start="18" data-line-end="19">TLDR uses a number of libraries/frameworks to work properly:</p>
 <ul>
