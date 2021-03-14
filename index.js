@@ -1,15 +1,14 @@
 //importing libraries
 const request = require("request-promise");
 const cheerio = require("cheerio");
-const path=require('path');
-require('dotenv').config();
+const path = require("path");
+require("dotenv").config();
 // console.log(process.env,"my enviroment varaibles hain ye");
 const scrapperfile = require("./scrapper");
 
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
-const schedule = require('node-schedule');
-
+const schedule = require("node-schedule");
 
 //REST API demo in Node.js
 var express = require("express"); // require the express framework
@@ -53,7 +52,6 @@ const TopLoosers = require("./schema/TopLoosers");
   console.log("connected to db...");
 })();
 
-
 //Backup
 // This function runs the mainscrapper() that is in scrapper.js file (that function is actually doing the scrapping function)
 // async function scrap(){
@@ -62,18 +60,16 @@ const TopLoosers = require("./schema/TopLoosers");
 // scrap();
 
 // Scheduling test starts
-const job = schedule.scheduleJob('0 */8 * * *', function(){
- async function scrap(){
- await scrapperfile.mainscrapper();
-}
-console.log(`scrapper last ran at ${new Date().toLocaleString()}`);
+const job = schedule.scheduleJob("0 */8 * * *", function () {
+  async function scrap() {
+    await scrapperfile.mainscrapper();
+  }
+  console.log(`scrapper last ran at ${new Date().toLocaleString()}`);
 });
-
 
 // app.get("/", function (req, res, next) {
 //   res.send("homepage");
 // });
-
 
 //This is API endpoint you have created and is returning json data
 app.get("/songs", function (req, res, next) {
@@ -199,30 +195,19 @@ app.get("/toploosers", function (req, res, next) {
     });
 });
 
-
-
-
-
-
-if(process.env.NODE_ENV==="production")
-{
-  //gives express application access to that folder
-app.use(express.static(path.join(__dirname,'Frontend/front-end/build')))
-//index.html is the main entry point to our frontend application
-app.get('*',(req,res)=>{
-res.sendFile(path.join(__dirname,'Frontend','front-end','build','index.html'))
-})
-} else{
-app.get('/',(req,res)=>{
-  res.send('API Running');
-})
+//dirname->D:\Startup Ideas\scrapper\Tier-List
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname, "/Frontend/front-end/build")));
+  app.get("*", (req, res) => {
+    res.sendFile(
+      path.join(__dirname, "Frontend", "front-end", "build", "index.html")
+    );
+  });
+} else {
+  app.get("/", (req, res) => {
+    res.send("API Running");
+  });
 }
-
-
-
-
-
-
 
 // Create a server to listen at port 8080
 var server = app.listen(port, function () {
