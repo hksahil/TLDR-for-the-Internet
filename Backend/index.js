@@ -1,6 +1,7 @@
 //importing libraries
 const request = require("request-promise");
 const cheerio = require("cheerio");
+const path=require('path');
 require('dotenv').config();
 console.log(process.env,"my enviroment varaibles hain ye");
 const scrapperfile = require("./scrapper");
@@ -69,9 +70,9 @@ console.log(`scrapper last ran at ${new Date().toLocaleString()}`);
 });
 
 
-app.get("/", function (req, res, next) {
-  res.send("homepage");
-});
+// app.get("/", function (req, res, next) {
+//   res.send("homepage");
+// });
 
 
 //This is API endpoint you have created and is returning json data
@@ -197,6 +198,31 @@ app.get("/toploosers", function (req, res, next) {
       console.log(err, "err");
     });
 });
+
+
+
+
+
+
+if(process.env.NODE_ENV==="production")
+{
+  //gives express application access to that folder
+app.use(express.static(path.join(__dirname,'../Frontend/front-end/build')))
+//index.html is the main entry point to our frontend application
+app.get('*',(req,res)=>{
+res.sendFile(path.join(__dirname,'Frontend','front-end','build','index.html'))
+})
+} else{
+app.get('/',(req,res)=>{
+  res.send('API Running');
+})
+}
+
+
+
+
+
+
 
 // Create a server to listen at port 8080
 var server = app.listen(port, function () {

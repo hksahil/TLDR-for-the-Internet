@@ -29,7 +29,7 @@ export default function Info(props) {
       <div className="list">
         <p>Is the data reliable?</p>
         <p>
-          We run a cron job every 3 hours which scraps the data from top websites like twitter, Inshorts, Spotify etc.
+          We run a cron job every 8 hours which scraps the data from top websites like twitter, Inshorts, Spotify etc.
           <br/><br/>
           So yea , you can believe us !
         </p>
