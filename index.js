@@ -207,7 +207,7 @@ app.get("/toploosers", function (req, res, next) {
 if(process.env.NODE_ENV==="production")
 {
   //gives express application access to that folder
-app.use(express.static(path.join(__dirname,'/Frontend/front-end/build')))
+app.use(express.static(path.join(__dirname,'Frontend/front-end/build')))
 //index.html is the main entry point to our frontend application
 app.get('*',(req,res)=>{
 res.sendFile(path.join(__dirname,'Frontend','front-end','build','index.html'))
