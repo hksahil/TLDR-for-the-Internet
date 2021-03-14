@@ -1,0 +1,424 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, "Sans-Serif";
+  text-decoration: none;
+}
+
+body {
+  margin: 0 !important;
+  background: #000000;
+  display: flex;
+  justify-content: center;
+}
+.elevated {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+}
+
+.navicon {
+  color: white;
+  display: flex;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  font-size: 20px;
+}
+
+.carousal-container {
+  padding: 30px;
+  background: #222;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.carousal-text {
+  margin: 0px 20px 0px 20px;
+  color: white !important;
+  font-weight: normal !important;
+}
+
+.slick-dots li button:before {
+  color: lightgoldenrodyellow !important;
+}
+
+/* This is the class responsible for main styling of text inside carousal */
+.slick-track {
+  display: flex !important;
+  width: 2475px;
+  opacity: 1;
+  transform: translate3d(-275px, 0px, 0px);
+  justify-content: center !important;
+  align-items: center !important;
+  /* text-align: center !important; */
+}
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+.slick-prev:before {
+  margin-left: 2px !important;
+}
+
+.slick-next:before {
+  margin-right: 2px !important;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* If the screen size is over 1024px wide. */
+  .navicon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* If the screen size is atleast 768px wide, but no more than 1023px */
+  .navicon {
+    display: none;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.MuiPaper-root
+  .MuiDrawer-paper
+  .MuiDrawer-paperAnchorBottom
+  .MuiPaper-elevation16 {
+  height: 500px;
+  background: #121212 !important;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: "#ffffffde";
+  background-color: #121212;
+  margin-top: 10px;
+}
+
+.header {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  font-family: "Public Sans", sans-serif;
+  margin: 0px 0px 2px 12px;
+  background: url(https://i.ibb.co/bR7CdHr/Whats-App-Image-2021-03-10-at-6-04-28-PM.jpg);
+  height: 260px;
+}
+
+.list p:nth-child(1) {
+  font-weight: bold;
+  color: #ffffffde;
+}
+
+.list p:nth-child(2) {
+  color: #ffffff99;
+  margin-top: 4px;
+}
+
+.list span {
+  color: #ffffff99;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  border: 2px solid #4caf50;
+  background-color: #121212;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  max-width: fit-content;
+  margin: 0 auto;
+}
+
+/* Green */
+.success {
+  border-color: #4caf50;
+  color: #4caf50;
+  margin-top: 20px;
+}
+
+.success:hover {
+  background-color: #4caf50;
+  color: white;
+}
+.Typewriter {
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(184, 11, 195),
+    rgb(98, 54, 255)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.moving-div {
+  display: flex;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.songs-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: #121212;
+  border-radius: 6px;
+  margin: 2% 12px;
+  padding: 15px;
+  border-left: 6px solid #d291bc;
+}
+
+.stocks-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: #121212;
+  border-radius: 6px;
+  margin: 2% 10px;
+  padding: 15px;
+  border-left: 6px solid #ffffb7;
+}
+
+.card-header-text {
+  font-weight: 600;
+  padding-bottom: 8px;
+  color: rgb(255, 255, 255, 0.87) !important;
+}
+
+.card-list {
+  padding: 10px 0px;
+  color: rgb(255, 255, 255, 0.6) !important;
+}
+
+.card-list-song {
+  padding: 10px 0px;
+  color: rgb(255, 255, 255, 0.6) !important;
+  flex-grow: 1;
+  margin-right: 12px !important;
+}
+
+.card-list-repo {
+  padding: 2px 0px;
+  color: #ffffffde;
+  text-transform: capitalize;
+}
+
+.card-list-news {
+  padding: 2px 0px;
+  color: #ffffffde;
+  text-transform: capitalize;
+}
+
+.games-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  background: #121212;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 25%);
+  border-radius: 6px;
+  margin: 2% 10px;
+  padding: 15px;
+  border-left: 6px solid lightsalmon;
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  background: #121212;
+  border-radius: 6px;
+  margin: 2% 10px;
+  padding: 15px;
+  border-left: 6px solid lightskyblue;
+}
+
+.trends-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+  background: #121212;
+  border-radius: 6px;
+  margin: 2% 10px;
+  padding: 15px;
+  border-left: 6px solid lightskyblue;
+}
+
+.birthday-card {
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 1; */
+  position: relative;
+  overflow: hidden;
+  background: #121212;
+  border-radius: 6px;
+  margin: 2% 10px;
+  padding: 15px;
+  border-left: 6px solid lightgoldenrodyellow;
+}
+
+.history-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  background: #121212;
+  border-radius: 6px;
+  margin: 2% 10px;
+  padding: 15px;
+  border-left: 6px solid lightcoral;
+}
+
+.repos-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  flex-grow: 1;
+  background: #121212;
+  border-radius: 6px;
+  margin: 2% 10px;
+  padding: 15px;
+  border-left: 6px solid lightgreen;
+}
+
+/* repo css starts */
+.repo-parent {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.repo-desc {
+  color: #ffffff99;
+  width: 85%;
+}
+.news-desc {
+  color: #ffffff99;
+  width: 100%;
+  margin-top: 6px;
+}
+
+.repo-parent-left {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.news-parent-left {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-right: 12px;
+}
+
+.repo-parent-right {
+  display: flex;
+  align-items: center;
+}
+
+/* repo css ends */
+
+.pill {
+  border: none;
+  color: white;
+  background-color: #121212;
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  max-width: fit-content;
+  font-size: 12px;
+}
+
+.pill-static {
+  border: none;
+  /* color: green;
+  background-color: lightgreen; */
+  /* font-weight: 900; */
+  padding: 2px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  max-width: fit-content;
+  font-size: 12px;
+  border: 1px solid #ffffffde;
+  color: #ffffffde;
+}
+
+.highlighted {
+  background-color: white;
+  color: black;
+  font-weight: 900;
+}
+
+.highlighted-date {
+  background-color: lightgreen;
+  color: green;
+  font-weight: 900;
+}
+
+button:focus {
+  outline: none;
+  border: none;
+  width: none;
+  outline-width: none;
+}
+button {
+  outline: none;
+  border: none;
+  width: none;
+  outline-width: none;
+}
+
+.pill-container {
+  display: flex;
+  padding-bottom: 6px;
+}
+
+.gainer-change {
+  color: lightgreen;
+}
+
+.looser-change {
+  color: #ff0000;
+}
+
+.arrows {
+  vertical-align: middle;
+  padding: 12px 10px 10px 0px;
+}
+
+.list-container {
+  display: flex;
+}
+
+.scroll-btn {
+  background-color: green;
+}

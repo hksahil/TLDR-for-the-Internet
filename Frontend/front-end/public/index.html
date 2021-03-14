@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="./images/logo.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="description"
+      content="TLDR is designed to simplify your life.It summarizes the Internet in shortest way possible."
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="./images/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+
+    <link rel="manifest" href="./manifest.json" />
+    <title>The TLDR of the Internet</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+<script>
+if('serviceWorker in navigator'){
+window.addEventListener('load',()=>{
+navigator.serviceWorker.register('./serviceworker.js')
+.then((reg)=>console.log('Success:',reg.scope))
+.catch((err)=>{console.log(err)})
+})
+}
+
+  </script>
+
+
+    </div>
+  </body>
+</html>
