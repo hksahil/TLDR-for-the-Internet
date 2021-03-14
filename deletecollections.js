@@ -13,7 +13,7 @@ const Events = require('./schema/Events');
 const FamousPerson = require('./schema/FamousPerson');
 const Github = require('./schema/Github');
 const TopGainers = require('./schema/TopGainers');
-const TopLoosers = require('./schema/TopLoosers');
+const TopLoosers = require('./schema/topLoosers');
 
 //Delete all collections of Games model
 async function deleteall(type){

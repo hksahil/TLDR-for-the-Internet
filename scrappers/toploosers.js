@@ -1,7 +1,7 @@
 
 const request =require('request-promise');
 const cheerio =require('cheerio');
-const TopLoosers = require('../schema/TopLoosers');
+const TopLoosers = require('../schema/topLoosers');
 const mongoose = require('mongoose');
 
 //Scraping Songs

@@ -28,7 +28,7 @@ const Events = require("./schema/Events");
 const FamousPerson = require("./schema/FamousPerson");
 const Github = require("./schema/Github");
 const TopGainers = require("./schema/TopGainers");
-const TopLoosers = require("./schema/TopLoosers");
+const TopLoosers = require("./schema/topLoosers");
 
 //connecting to database(mongodb)
 async function connectmongo() {
