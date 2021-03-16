@@ -33,7 +33,8 @@ npm run start
 npm run start
 or node index
 </code></pre>
-<p class="has-line-data" data-line-start="45" data-line-end="46"><code>NOTE : Replace envs with your own credentials</code></p>
+<p class="has-line-data" data-line-start="45" data-line-end="46"><code>NOTE #1 : Replace envs with your own credentials</code></p>
+<p class="has-line-data" data-line-start="45" data-line-end="46"><code>NOTE #2: Quick Hack to run the scrapper irrespective of cron:In scrapper.js , uncomment the mainscrapper() call and run this file using node scrapper . This will automatically update the db . Also,this file is standalone file . </code></p>
 <table class="table table-striped table-bordered">
 <thead>
 <tr>
