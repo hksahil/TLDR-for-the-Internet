@@ -76,12 +76,12 @@ export default function Card(props) {
             </button>
 
             <button
-              className={`pill ${type === "startups" ? "highlighted" : ""}`}
+              className={`pill ${type === "science" ? "highlighted" : ""}`}
               onClick={() => {
-                utilwrapper("startups", "type");
+                utilwrapper("science", "type");
               }}
             >
-              Startups
+              Science
             </button>
           </div>
           {category &&

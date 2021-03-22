@@ -54,22 +54,18 @@ const TopLoosers = require("./schema/topLoosers");
 
 //Backup
 // This function runs the mainscrapper() that is in scrapper.js file (that function is actually doing the scrapping function)
-// async function scrap(){
-//  await scrapperfile.mainscrapper();
-// }
-// scrap();
+async function scrap(){
+ await scrapperfile.mainscrapper();
+}
+scrap();
 
 // Scheduling test starts
-schedule.scheduleJob("0 */6 * * *", function () {
-  async function scrap() {
-    await scrapperfile.mainscrapper();
-  }
-  scrap();
-  console.log(`scrapper last ran at ${new Date().toLocaleString()}`);
-});
-
-// app.get("/", function (req, res, next) {
-//   res.send("homepage");
+// schedule.scheduleJob("0 */6 * * *", function () {
+//   async function scrap() {
+//     await scrapperfile.mainscrapper();
+//   }
+//   scrap();
+//   console.log(`scrapper last ran at ${new Date().toLocaleString()}`);
 // });
 
 //This is API endpoint you have created and is returning json data
